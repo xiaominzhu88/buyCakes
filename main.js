@@ -8,7 +8,7 @@ const imageArray = [
     url: "cupcake2.jpg"
   }
 ];
-const inputPrice = document.querySelector(".inputPrice");
+const inputPrice = document.querySelector(".input-Price");
 const buyQuantity = document.querySelector(".buyQuantity");
 const total = document.querySelector(".result");
 const step = document.querySelector(".value");
@@ -29,7 +29,13 @@ function showPrice(e) {
   const pieces = buyQuantity.value;
   const endPrice = price * pieces;
 
-  total.innerText = "€" + endPrice.toFixed(2);
+  if (isNaN(parseFloat(price))) {
+    total.innerText = "not a price";
+    total.style.backgroundColor = "red";
+  } else {
+    total.innerText = "€" + endPrice.toFixed(2);
+    total.style.backgroundColor = "thistle";
+  }
 }
 
 function showStep() {
