@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <title>Buy-Cakes</title>
+  </head>
+  <body>
+    <div class="text-title">
+      <h2>Choose your favorite Cupcakes!</h2>
+    </div>
+
+    <div class="inputValue">
+      <form>
+        <img src="cupcake.jpg" alt="cupcake" class="cupcake" />
+        <br />
+        <label for="price">Price per piece</label><br />
+        <input type="text" class="inputPrice" value="" name="price" />
+      </form>
+    </div>
+
+    <div class="quantity">
+      <form>
+        <label for="quantity">Quantity</label><br />
+        <input
+          type="range"
+          min="1"
+          max="10"
+          step="1"
+          value="1"
+          class="buyQuantity"
+          name="quantity"
+        />
+        <span class="value">1</span>
+      </form>
+      <hr />
+
+      <p>Total Price:</p>
+      <div class="result">€</div>
+    </div>
+
+    <div class="buttons">
+      <button class="yes">Yes</button>
+      <button class="no">No</button>
+      <button class="exit">Exit</button>
+    </div>
+
+    <div class="change-text">
+      <!--<p>
+          <ul>
+              <li><img></li>
+              <li><img></li>
+          </ul>
+      </p>-->
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

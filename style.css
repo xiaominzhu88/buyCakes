@@ -1,0 +1,86 @@
+body {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  text-align: center;
+  background-color: rgb(232, 235, 199);
+  font-family: fantasy;
+  font-size: 24px;
+}
+
+input {
+  border-radius: 5px;
+}
+
+.quantity {
+  margin-top: 20px;
+}
+
+.value {
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: rgb(90, 112, 119);
+  width: 5px;
+  box-shadow: 0px 1px 3px 2px gray;
+
+  padding: 3px;
+  margin-left: 10px;
+}
+
+h2 {
+  text-shadow: 0px 1px 2px violet;
+}
+.result {
+  font-size: 24px;
+  font-weight: bold;
+  border: 1px violet solid;
+  background-color: thistle;
+  width: 10%;
+  margin: auto;
+  box-shadow: 0px 1px 3px 2px gray;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+button {
+  margin-top: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+  color: #fff;
+  font-weight: bold;
+  border: 1px gray solid;
+  background-color: gray;
+  box-shadow: 0px 1px 3px 2px gray;
+  border-radius: 10px;
+  padding: 5px;
+  outline: none;
+  cursor: pointer;
+}
+button:hover {
+  background-color: teal;
+}
+button:active {
+  background-color: teal;
+  transform: translateY(4px);
+}
+
+img {
+  border: 1px gray solid;
+  box-shadow: 0px 1px 3px 2px rgb(218, 99, 99);
+  border-radius: 15px;
+  height: 15%;
+  width: 15%;
+  margin-top: 20px;
+  margin: auto;
+  opacity: 0.7;
+  cursor: pointer;
+}
+img:hover {
+  opacity: 1;
+  transition: opacity 1s;
+  transform: rotate(360deg) scale(0.5, 0.5);
+  transition: 3s;
+}
+li {
+  list-style: none;
+}
